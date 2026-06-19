@@ -1,0 +1,32 @@
+# BizAnalyzer.nl — AI Business Analyzer for the Netherlands
+
+BizAnalyzer.nl is a free multilingual platform (Arabic, Dutch, English) that helps migrants and entrepreneurs analyze business ideas for the Dutch market.
+
+## Pages
+
+- [Home — Business Analyzer](https://www.bizanalyzer.nl/)
+- [Top Sectors Netherlands](https://www.bizanalyzer.nl/top-sectors)
+- [ZZP Freelance Rates](https://www.bizanalyzer.nl/freelance)
+- [Job Search Netherlands](https://www.bizanalyzer.nl/jobs)
+- [Economic News](https://www.bizanalyzer.nl/news)
+- [Blog — Entrepreneurship in NL](https://www.bizanalyzer.nl/blog)
+- [About](https://www.bizanalyzer.nl/about)
+- [Contact](https://www.bizanalyzer.nl/contact)
+- [Privacy Policy](https://www.bizanalyzer.nl/privacy)
+
+## Blog Articles
+
+- [KVK Registration for Migrants](https://www.bizanalyzer.nl/blog/kvk-registratie-migranten)
+- [ZZP Freelance Rates 2025](https://www.bizanalyzer.nl/blog/zzp-tarieven-nederland)
+- [BTW VAT for Freelancers](https://www.bizanalyzer.nl/blog/btw-belasting-zzp)
+- [Best Sectors for Migrants](https://www.bizanalyzer.nl/blog/beste-sectoren-migranten)
+- [Starting Business as Status Holder](https://www.bizanalyzer.nl/blog/statushouder-ondernemen)
+- [Amsterdam vs Rotterdam](https://www.bizanalyzer.nl/blog/amsterdam-vs-rotterdam)
+- [Government Subsidies ZZP](https://www.bizanalyzer.nl/blog/subsidies-zzp-nederland)
+- [Starting Online Store NL](https://www.bizanalyzer.nl/blog/online-winkel-starten)
+- [Insurance for Freelancers](https://www.bizanalyzer.nl/blog/verzekeringen-zzp)
+- [Retirement Planning ZZP](https://www.bizanalyzer.nl/blog/pensioen-zzp)
+
+## About
+
+BizAnalyzer.nl provides AI-powered business analysis for the Dutch market. The platform is built for migrants, status holders, expats, and entrepreneurs in the Netherlands.

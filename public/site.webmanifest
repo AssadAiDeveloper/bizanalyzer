@@ -1,0 +1,13 @@
+{
+  "name": "BizAnalyzer.nl",
+  "short_name": "BizAnalyzer",
+  "description": "Business Analyzer for the Netherlands",
+  "icons": [
+    { "src": "/android-chrome-192x192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/android-chrome-512x512.png", "sizes": "512x512", "type": "image/png" }
+  ],
+  "theme_color": "#FF5F00",
+  "background_color": "#1a1a2e",
+  "display": "standalone",
+  "start_url": "/"
+}
