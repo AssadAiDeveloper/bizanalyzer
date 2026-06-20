@@ -170,26 +170,21 @@ export default function AppClient({ initialPage = "main", initialBlogId = null }
 
           {/* Right: lang + hamburger */}
           <div style={{ display:"flex", gap:4, alignItems:"center", flexShrink:0 }}>
-            <div style={{ position:"relative" }} data-lang-dropdown>
+            <div style={{ position:"relative" }}>
               <button type="button" onClick={()=>setLangOpen(p=>!p)}
                 style={{ display:"flex", alignItems:"center", gap:5, padding:"10px 12px", minHeight:40, borderRadius:20, border:`1.5px solid ${ORANGE}`, background:"transparent", color:"white", fontSize:13, cursor:"pointer", outline:"none" }}>
                 <span style={{ fontSize:16 }}>🌐</span>
                 <span style={{ fontSize:12, fontWeight:700 }}>{lang==="ar"?"ع":lang==="nl"?"NL":"EN"}</span>
                 <span style={{ fontSize:12, color:ORANGE }}>▾</span>
               </button>
-              {langOpen && (
-                <>
-                <div onClick={()=>setLangOpen(false)} style={{ position:"fixed", inset:0, zIndex:199, background:"transparent" }}/>
-                <div style={{ position:"absolute", top:"calc(100% + 6px)", right:0, background:DARK, border:`1px solid ${ORANGE}33`, borderRadius:12, overflow:"hidden", zIndex:200, minWidth:140, boxShadow:"0 8px 24px rgba(0,0,0,0.4)" }}>
-                  {[{c:"ar",flag:"🇸🇦",label:"العربية"},{c:"nl",flag:"🇳🇱",label:"Nederlands"},{c:"en",flag:"🇬🇧",label:"English"}].map(x=>(
-                    <button key={x.c} type="button" onClick={()=>{setLang(x.c);setLangOpen(false);}}
-                      style={{ display:"flex", alignItems:"center", gap:8, width:"100%", padding:"10px 14px", background:lang===x.c?`${ORANGE}22`:"transparent", border:"none", color:lang===x.c?ORANGE:"white", fontSize:13, cursor:"pointer", fontFamily:"Tahoma,Arial,sans-serif", textAlign:"start" }}>
-                      <span>{x.flag}</span><span>{x.label}</span>
-                    </button>
-                  ))}
-                </div>
-                </>
-              )}
+              <div style={{ position:"absolute", top:"calc(100% + 6px)", right:0, background:DARK, border:`1px solid ${ORANGE}33`, borderRadius:12, overflow:"hidden", zIndex:200, minWidth:140, boxShadow:"0 8px 24px rgba(0,0,0,0.4)", display:langOpen?"block":"none" }}>
+                {[{c:"ar",flag:"🇸🇦",label:"العربية"},{c:"nl",flag:"🇳🇱",label:"Nederlands"},{c:"en",flag:"🇬🇧",label:"English"}].map(x=>(
+                  <button key={x.c} type="button" onClick={()=>{setLang(x.c);setLangOpen(false);}}
+                    style={{ display:"flex", alignItems:"center", gap:8, width:"100%", padding:"10px 14px", background:lang===x.c?`${ORANGE}22`:"transparent", border:"none", color:lang===x.c?ORANGE:"white", fontSize:13, cursor:"pointer", fontFamily:"Tahoma,Arial,sans-serif", textAlign:"start" }}>
+                    <span>{x.flag}</span><span>{x.label}</span>
+                  </button>
+                ))}
+              </div>
             </div>
             <button className="mobile-nav-only" onClick={() => setMobileMenu(p => !p)} aria-label={mobileMenu ? "Close menu" : "Open menu"} aria-expanded={mobileMenu}
                 style={{ background:"transparent", border:"none", cursor:"pointer", padding:"12px 10px", minWidth:44, minHeight:44, flexDirection:"column", justifyContent:"center", alignItems:"center", gap:4 }}>
