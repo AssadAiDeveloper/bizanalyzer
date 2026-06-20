@@ -177,6 +177,7 @@ export default function AppClient({ initialPage = "main", initialBlogId = null }
                 <span style={{ fontSize:12, fontWeight:700 }}>{lang==="ar"?"ع":lang==="nl"?"NL":"EN"}</span>
                 <span style={{ fontSize:12, color:ORANGE }}>▾</span>
               </button>
+              <span style={{ fontSize:8, color:"#666", marginLeft:4 }}>v2</span>
               <div style={{ position:"absolute", top:"calc(100% + 6px)", right:0, background:DARK, border:`1px solid ${ORANGE}33`, borderRadius:12, overflow:"hidden", zIndex:200, minWidth:140, boxShadow:"0 8px 24px rgba(0,0,0,0.4)", display:langOpen?"block":"none" }}>
                 {[{c:"ar",flag:"🇸🇦",label:"العربية"},{c:"nl",flag:"🇳🇱",label:"Nederlands"},{c:"en",flag:"🇬🇧",label:"English"}].map(x=>(
                   <button key={x.c} type="button" onClick={()=>{setLang(x.c);setLangOpen(false);}}
