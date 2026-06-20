@@ -190,9 +190,9 @@ export default function AppClient({ initialPage = "main", initialBlogId = null }
                 outline: "none",
               }}
             >
-              <option value="en" style={{ background: DARK, color: "white" }}>🇬🇧 English</option>
-              <option value="nl" style={{ background: DARK, color: "white" }}>🇳🇱 Nederlands</option>
-              <option value="ar" style={{ background: DARK, color: "white" }}>🇸🇦 العربية</option>
+              <option value="en" style={{ background: DARK, color: "white" }}>🇬🇧 EN</option>
+              <option value="nl" style={{ background: DARK, color: "white" }}>🇳🇱 NL</option>
+              <option value="ar" style={{ background: DARK, color: "white" }}>🇸🇦 AR</option>
             </select>
             <button className="mobile-nav-only" onClick={() => setMobileMenu(p => !p)} aria-label={mobileMenu ? "Close menu" : "Open menu"} aria-expanded={mobileMenu}
                 style={{ background:"transparent", border:"none", cursor:"pointer", padding:"12px 10px", minWidth:44, minHeight:44, flexDirection:"column", justifyContent:"center", alignItems:"center", gap:4 }}>
