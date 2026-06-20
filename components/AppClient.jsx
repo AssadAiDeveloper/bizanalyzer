@@ -177,22 +177,25 @@ export default function AppClient({ initialPage = "main", initialBlogId = null }
                 appearance: "none",
                 WebkitAppearance: "none",
                 MozAppearance: "none",
-                padding: "6px 24px 6px 10px",
+                padding: "6px 26px 6px 12px",
                 minHeight: 30,
                 borderRadius: 16,
                 border: `1.5px solid ${ORANGE}`,
-                background: `${DARK} url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='5' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23FF5F00' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 9px center`,
+                background: `${DARK} url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='9' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23FF5F00' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 10px center`,
+                backgroundSize: "9px 6px",
                 color: "white",
                 fontSize: 11,
                 fontWeight: 700,
                 fontFamily: "inherit",
+                letterSpacing: "0.03em",
                 cursor: "pointer",
                 outline: "none",
+                lineHeight: 1,
               }}
             >
-              <option value="en" style={{ background: DARK, color: "white" }}>🇬🇧 EN</option>
-              <option value="nl" style={{ background: DARK, color: "white" }}>🇳🇱 NL</option>
-              <option value="ar" style={{ background: DARK, color: "white" }}>🇸🇦 AR</option>
+              <option value="en" style={{ background: DARK, color: "white" }}>EN</option>
+              <option value="nl" style={{ background: DARK, color: "white" }}>NL</option>
+              <option value="ar" style={{ background: DARK, color: "white" }}>AR</option>
             </select>
             <button className="mobile-nav-only" onClick={() => setMobileMenu(p => !p)} aria-label={mobileMenu ? "Close menu" : "Open menu"} aria-expanded={mobileMenu}
                 style={{ background:"transparent", border:"none", cursor:"pointer", padding:"12px 10px", minWidth:44, minHeight:44, flexDirection:"column", justifyContent:"center", alignItems:"center", gap:4 }}>
