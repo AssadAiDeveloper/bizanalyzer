@@ -174,22 +174,25 @@ export default function AppClient({ initialPage = "main", initialBlogId = null }
               onChange={(e) => setLang(e.target.value)}
               aria-label="Select language"
               style={{
-                appearance: "auto",
-                padding: "10px 12px",
+                appearance: "none",
+                WebkitAppearance: "none",
+                MozAppearance: "none",
+                padding: "10px 30px 10px 14px",
                 minHeight: 40,
                 borderRadius: 20,
                 border: `1.5px solid ${ORANGE}`,
-                background: DARK,
+                background: `${DARK} url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' stroke='%23FF5F00' stroke-width='1.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 12px center`,
                 color: "white",
                 fontSize: 13,
                 fontWeight: 700,
+                fontFamily: "inherit",
                 cursor: "pointer",
                 outline: "none",
               }}
             >
-              <option value="en">🇬🇧 English</option>
-              <option value="nl">🇳🇱 Nederlands</option>
-              <option value="ar">🇸🇦 العربية</option>
+              <option value="en" style={{ background: DARK, color: "white" }}>🇬🇧 English</option>
+              <option value="nl" style={{ background: DARK, color: "white" }}>🇳🇱 Nederlands</option>
+              <option value="ar" style={{ background: DARK, color: "white" }}>🇸🇦 العربية</option>
             </select>
             <button className="mobile-nav-only" onClick={() => setMobileMenu(p => !p)} aria-label={mobileMenu ? "Close menu" : "Open menu"} aria-expanded={mobileMenu}
                 style={{ background:"transparent", border:"none", cursor:"pointer", padding:"12px 10px", minWidth:44, minHeight:44, flexDirection:"column", justifyContent:"center", alignItems:"center", gap:4 }}>
