@@ -2,8 +2,11 @@
 User-agent: *
 Allow: /
 
+# Block API routes from indexing
+Disallow: /api/
+
 # Sitemap location
-Sitemap: https://bizanalyzer.nl/sitemap.xml
+Sitemap: https://www.bizanalyzer.nl/sitemap.xml
 
 # Allow all major crawlers
 User-agent: Googlebot
